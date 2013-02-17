@@ -1,5 +1,4 @@
 *.pyc
-*settings.py
 *settings_local.py
 media/
 *.DS_Store
