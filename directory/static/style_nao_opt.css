@@ -1,0 +1,290 @@
+html { height: 100% }
+body { 
+  height: 100%; 
+  margin: 0; 
+  padding: 0;  
+  font-family: verdana;
+  font-size: 0.625em;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#map_canvas{ 
+  height: 100%; 
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#menu {  
+  display: none;
+  height: 82%;
+  width: 16%;
+  top: 7.7%;
+  left: 0.88%;
+  position: fixed;
+  z-index: 2;
+  background-color: rgba(0,0,0,.8);
+  overflow: auto;
+  border: thin solid black;
+  border-style: groove;
+  border-radius: 7px;
+  color: white; 
+}
+
+ #menuIn {
+  height: 50%;
+  width: 44%;
+  top: 25%;
+  left: 28.1%;
+  position: absolute;
+  z-index: 2;
+  background-color: black;
+  opacity: 0.8;
+  overflow: auto;
+  border: thin solid black;
+  border-style: groove;
+  border-radius: 7px;
+  text-align: center;
+  color: white;
+ }
+
+ #menuInf {
+  text-align: center; 
+  display: none;
+  height: 85%;
+  width: 32.9%;
+  top: 8%;
+  left: 63.4%;
+  position: fixed;
+  z-index: 2;
+  background-color: rgba(0,0,0,0.8);
+  overflow: auto;
+  border: thin solid black;
+  border-style: groove;
+  border-radius: 7px;
+  color: white;
+}
+
+.buttonEx {
+  width:600%;
+  text-align: left;
+  background:none;
+  border:none;
+  margin:0;
+  color: white;
+  cursor: pointer;
+  font-family: verdana;
+  font-size: 1em;
+}
+
+.buttonDropMenu{
+  background:none;
+  border:none;
+  color: white;
+  cursor: pointer;
+  font-family: verdana;
+  font-size: 1em;
+}
+
+.drop-menu {
+  max-height:4%;
+  position: fixed;
+  z-index: 2;
+  background-color: black;
+  display: none;
+  top: 1.42%;
+  left: 0.88%;
+  opacity: 0.8;
+  font-family: verdana;
+  font-size: 1em;
+  width: 16%;
+  height: 3%;
+  cursor: pointer;
+  border: thin solid black;
+  border-style: groove;
+  border-radius: 5px;
+  color: white; 
+  text-align:left;
+}
+
+.plus {
+  position: absolute;
+  right: 5%;
+  font-family: verdana;
+  font-size: 1.1em;
+  display: inline-block;
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+}
+
+.drop-menu:hover {
+  border: thin solid black;
+  border-style: groove;
+  border-radius: 7px;
+}
+
+.drop-menu:hover .sub-menu {
+  display: inline-block;
+}
+
+.drop-menu:hover .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+.sub-menu {
+  display: none;
+  position: fixed;
+  width: 9%;
+  border: thin solid black;
+  border-style: groove;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  left: 17.05%;
+  top: -0.1%;
+  height: 10%;
+  text-align: center;
+  -webkit-box-shadow: 0px 13px 25px rgba(0,0,0, 0.2);
+  -moz-box-shadow: 0px 13px 25px rgba(0,0,0, 0.2);
+  box-shadow: 0px 13px 25px rgba(0,0,0, 0.2);
+}
+
+.sub-menu li {
+  display: block;
+  width: 120%;
+  margin-left: -30%;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: white;
+}
+  
+.sub-menu li:hover {
+  border-bottom-width: 1px;
+  border-bottom-style: dotted;
+  border-bottom-color: white;
+}
+
+.buttonClose {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  color: white;
+  border: thin solid black;
+  border-style: groove;
+  border-radius: 5px;
+  font-family: verdana;
+  font-size: 2em;
+}
+
+.buttonClose:hover{} 
+
+.closeB{
+  display: inline-block;
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+}   
+
+.buttonClose:hover .closeB {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.8); 
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255,255,255,0.4); 
+}
+
+ .button {        
+  background:none;
+  border:none;
+  margin:0;
+  color: white;
+  cursor: pointer;
+  font-family: verdana;
+  font-size: 1em;
+}
+
+.triang {
+  position: absolute;
+  right: 5%;
+  display: inline-block;
+  font-family: verdana;
+  font-size: 1.1em;
+  color: white;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+}
+
+.divTriang {
+  width: 16%;
+  z-index: 2;
+  background-color: black;
+  opacity: 0.8;
+  color: white; 
+}
+
+#numEmpresasMenu {
+  display: none;
+  position: absolute;
+  width: 16%;
+  text-align: left;
+  height: 3.5%;
+  top: 91%;
+  left: 0.88%;
+  z-index: 2;
+  background-color: rgba(0,0,0,.8);
+  overflow: auto;
+  border: thin solid black;
+  border-style: groove;
+  border-radius: 5px;
+  color: white; 
+}
+
+#numEmpresasLabel {
+  margin-left: 9px;
+  margin-right: 59px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.thumbicon {
+  width: 20px;
+  height: 20px;
+  margin-top: 1px;
+  margin-left: 4px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#logo {
+  border:6px double #545565;
+}

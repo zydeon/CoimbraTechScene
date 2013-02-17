@@ -1,0 +1,23 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+	<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+	<div id="cont_linkedin"></div>
+	<script>
+		function getUrlVars() {
+    		var vars = {};
+    		var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, 
+    	function(m,key,value) {
+        	vars[key] = value;
+    	});
+    		return vars;
+		}
+		e = document.getElementById('cont_linkedin');
+		if (e != null) {
+			e.innerHTML = "<script type=\"IN/CompanyInsider\" data-id="+getUrlVars()["id"]+" data-modules=\"innetwork,newhires,jobchanges\"\>ola<\/script>;";
+		}
+	</script>
+</body>
+</html>
