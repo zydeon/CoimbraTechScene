@@ -3,8 +3,8 @@ CoimbraTechScene
 
 Directory of all of the technology companies situated in Coimbra (Portugal).
 
-Website: [coimbratechscene.pt.vu](http://coimbratechscene.pt.vu)
-Frameworks: Django
+Website: [coimbratechscene.pt.vu](http://coimbratechscene.pt.vu)  
+Frameworks: [Django](https://www.djangoproject.com/)
 
 # Installation
 
