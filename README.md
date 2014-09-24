@@ -8,7 +8,7 @@ Directory of all of the technology companies situated in Coimbra (Portugal).
 Website: [coimbratechscene.pt.vu](http://coimbratechscene.pt.vu)  
 Frameworks: [Django](https://www.djangoproject.com/)
 
-# Installation
+## Installation
 
 Create a 'settings_local.py' file near CoimbraTechScene/settings.py and place the following code with the corresponding settings of your system:
 
@@ -35,7 +35,7 @@ Create a 'settings_local.py' file near CoimbraTechScene/settings.py and place th
     
     STATIC_ROOT = '/PATH/TO/REPO/CoimbraTechScene/directory/static'
     
-# Screenshots
+## Screenshots
 
 ![](/screenshots/1.jpg)
 
