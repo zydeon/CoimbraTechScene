@@ -1,6 +1,11 @@
 CoimbraTechScene
 ================
 
+Directory of all of the technology companies situated in Coimbra (Portugal).
+
+Website: [coimbratechscene.pt.vu](http://coimbratechscene.pt.vu)
+Frameworks: Django
+
 # Installation
 
 Create a 'settings_local.py' file near CoimbraTechScene/settings.py and place the following code with the corresponding settings of your system:
