@@ -1,6 +1,8 @@
 CoimbraTechScene
 ================
 
+![](/screenshots/3.jpg)
+
 Directory of all of the technology companies situated in Coimbra (Portugal).
 
 Website: [coimbratechscene.pt.vu](http://coimbratechscene.pt.vu)  
@@ -32,4 +34,10 @@ Create a 'settings_local.py' file near CoimbraTechScene/settings.py and place th
     )
     
     STATIC_ROOT = '/PATH/TO/REPO/CoimbraTechScene/directory/static'
+    
+# Screenshots
+
+![](/screenshots/1.jpg)
+
+![](/screenshots/2.jpg)
     
